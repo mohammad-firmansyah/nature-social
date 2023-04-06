@@ -66,8 +66,8 @@
         },
         methods:{
             async loadComments(){
-                const response = await fetch("http://localhost:8000/api/v1/comments");
-                const jsonData = await response.json();
+                const response = await fetch("http://localhost:8000/api/v1/comments")
+                const jsonData = await response.json()
                 this.comments = jsonData
 
             },
